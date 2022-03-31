@@ -5,8 +5,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 28px 8px 0;
-  background-color: violet;
+  padding: 0 28px 0px 0;
+  background-color: darkviolet;
   display: absolute;
   position: fixed;
   z-index: 1000;
@@ -16,13 +16,29 @@ nav {
 .nav-img {
   height: 50px;
   width: 400px;
+  clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
+  background-color: white;
+  padding-bottom: 8px;
 }
 .nav-head {
   padding-left: 10px;
+  padding-bottom: 8px;
   padding-right: 10px;
   display: flex;
   flex-direction: row;
   gap: 16px;
+}
+.q {
+  color: white;
+}
+.nav-item:hover,
+.q:hover {
+  color: black;
+  transition: all 0.3s;
+}
+.nav-item {
+  color: white;
+  padding-top: 10px;
 }
 .swiper {
   z-index: -100;
@@ -44,6 +60,7 @@ p:hover {
 }
 .content {
   padding: 5px;
+  text-decoration: none;
 }
 .content:hover {
   position: relative;
@@ -72,13 +89,16 @@ p:hover {
   font-size: 48px;
 }
 .header-content {
+  overflow: hidden;
   width: 100%;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.315);
   padding: 10px;
 }
 .header-content:hover {
-  background-color: blueviolet;
-  transition: all 2s;
+  /* background-color: rgba(137, 43, 226, 0.527); */
+  transition: all 0.5s;
+  transform: scale(1.1);
+  overflow: hidden;
 }
 .header {
   display: grid;
@@ -90,8 +110,18 @@ p:hover {
 }
 
 .footer-top {
-  background-color: violet;
+  background-color: darkviolet;
+  color: white;
   padding: 16px;
+}
+.footer-item p:hover,
+.foo p:hover,
+.foo li:hover,
+.foot-end p:hover {
+  color: black;
+}
+.footer-item li:hover {
+  color: black;
 }
 .footer {
   display: grid;
