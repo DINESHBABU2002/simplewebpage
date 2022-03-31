@@ -1,12 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 /* body {
   display: relative;
 } */
 nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 0 28px 8px 0;
   background-color: violet;
@@ -34,18 +31,24 @@ p:hover {
   cursor: pointer;
 }
 .dropdowncontent {
+  width: 100px;
   position: absolute;
   display: none;
   background-color: #888;
 }
 .dropdown:hover .dropdowncontent {
+  width: max-content;
   padding: 10px;
   display: block;
   z-index: 1000;
 }
+.content {
+  padding: 5px;
+}
 .content:hover {
   position: relative;
   background-color: white;
+  border-radius: 5px;
   z-index: 1000;
 }
 
@@ -124,7 +127,7 @@ li {
   height: 100vh;
   width: 100vw;
 }
-.contain{
+.contain {
   padding: 10px;
   display: flex;
 }

@@ -1,0 +1,18 @@
+.head {
+  height: 300px;
+  padding-top: 50px;
+  text-align: center;
+  background: linear-gradient(
+      rgba(238, 130, 238, 0.671),
+      rgba(238, 130, 238, 0.644)
+    ),
+    url("img2.jpg");
+  color: black;
+  font-weight: bold;
+}
+.head-title {
+  font-size: 32px;
+}
+.head-content {
+  font-size: 24px;
+}
